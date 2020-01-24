@@ -9,7 +9,7 @@ import android.os.PersistableBundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.widget.Toast;
+
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -55,17 +55,10 @@ public class TeleprompterEntry extends AppCompatActivity implements
                             mDrawerLayout.closeDrawers();                           // close drawer when item is tapped
                             switch (menuItem.getItemId()) {                                         // Switch-Case for some reason doesn't work
                                 case R.id.m_videoCam:
-                                    Toast.makeText(getApplicationContext(), "Drawer Video Camra", Toast.LENGTH_SHORT).show();
                                     startActivity(new Intent(getApplicationContext(), Teleprompter.class));
                                     break;
 
-
-                                case R.id.m_nav_folder:
-                                    Toast.makeText(getApplicationContext(),"Drawer Folder",Toast.LENGTH_SHORT).show();
-                                    break;
-
                                  default:
-                                    Toast.makeText(getApplicationContext(),"None Selected",Toast.LENGTH_SHORT).show();
                                     return true;
                             }
 
@@ -91,7 +84,6 @@ public class TeleprompterEntry extends AppCompatActivity implements
                 mDrawerLayout.openDrawer(GravityCompat.START);
                 break;
             case R.id.mdrop_sensorInteract:
-                Toast.makeText(getApplicationContext(),"dropDown proximity",Toast.LENGTH_SHORT).show();
                 break;
 
             default:

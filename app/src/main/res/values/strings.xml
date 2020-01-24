@@ -30,5 +30,6 @@
         device (rather than a dedicated and bigger hardware with physical buttons on it)
     </string>
     <string name="strStreamButton">Stream</string>
+    <string name="Toast_Default">None Selected</string>
 
 </resources>
