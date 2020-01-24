@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context=".ui.Teleprompter">
+
+    <com.wonderkiln.camerakit.CameraView
+        android:id="@+id/camera"
+
+        android:layout_width="228dp"
+        android:layout_height="230dp"
+
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="16dp"
+        android:adjustViewBounds="true"
+        app:ckCropOutput="true"
+        app:ckFacing="front"
+        app:ckFlash="auto"
+        app:ckJpegQuality="100"
+        app:ckMethod="standard"
+        app:ckPermissions="strict"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/scrollView2"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.wonderkiln.camerakit.CameraView>
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="231dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="8dp"
+        android:layerType="software"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.988"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/camera">
+
+        <Button
+            android:id="@+id/bImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/imaging" />
+
+        <Button
+            android:id="@+id/bCapture"
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/strStreamButton"
+            android:textSize="@dimen/streamBtnText_Size"
+            android:background="@drawable/ic_fiber_manual_record_black_24dp"
+            android:onClick="captureMotion" />
+
+        <Button
+            android:id="@+id/stopRecording"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_stop_black_24dp"
+            android:onClick="stopRecording"
+
+            android:text="@string/strButton"
+            android:textColor="@color/stop_color"
+            android:textSize="@dimen/btn_stop_text_size" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="365dp"
+        android:layout_height="385dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.111"
+        app:layout_goneMarginBottom="8dp">
+
+        <TextView
+            android:id="@+id/tvSource"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+
+            android:paddingStart="4dp"
+
+            android:paddingEnd="12dp"
+
+            android:scrollbars="vertical"
+            android:text="@string/source_text"
+            android:textSize="@dimen/sourceText_Size" />
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

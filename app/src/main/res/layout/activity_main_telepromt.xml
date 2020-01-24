@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Teleprompter">
+
+    <com.wonderkiln.camerakit.CameraView
+        android:id="@+id/camera"
+
+        android:layout_width="386dp"
+        android:layout_height="153dp"
+        android:adjustViewBounds="true"
+
+        app:ckCropOutput="true"
+        app:ckFacing="front"
+        app:ckFlash="auto"
+        app:ckJpegQuality="100"
+        app:ckMethod="standard"
+        app:ckPermissions="strict"
+        app:layout_constraintBottom_toTopOf="@+id/bottomLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.123">
+
+    </com.wonderkiln.camerakit.CameraView>
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="308dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layerType="software"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/bImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/imaging" />
+
+        <Button
+            android:id="@+id/bCapture"
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/strStreamButton"
+            android:textSize="@dimen/streamBtnText_Size"
+            android:background="@drawable/ic_fiber_manual_record_black_24dp"
+            android:onClick="captureMotion" />
+
+        <Button
+            android:id="@+id/stopRecording"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_stop_black_24dp"
+            android:onClick="stopRecording"
+
+            android:text="@string/strButton"
+            android:textColor="@color/stop_color"
+            android:textSize="@dimen/btn_stop_text_size" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/etSource"
+        android:layout_width="352dp"
+        android:layout_height="419dp"
+        android:layout_marginStart="8dp"
+        android:paddingStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="4dp"
+        android:paddingTop="4dp"
+        android:scrollbars="vertical|horizontal"
+
+        android:text="@string/source_text"
+        android:textSize="@dimen/sourceText_Size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

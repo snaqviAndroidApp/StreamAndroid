@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Teleprompt</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">second fragment generated</string>
+    <string name="secfrag_tag">secFrag_Tag</string>
+    <string name="cam">Video Camera</string>
+    <string name="cam_basic">Camera</string>
+    <string name="blueDaant">Bluetooth ANR Check</string>
+    <string name="algorithms">Algos</string>
+    <string name="folder">Folder</string>
+    <string name="hwInteract">Hw Access</string>
+    <string name="hwusb">USB Logging</string>
+    <string name="hwAccel">Sensors</string>
+    <string name="ProximitySensor">Proximity</string>
+    <string name="contentProvider">Cached Streaming</string>
+    <string name="authO">Oauth2.0</string>
+    <string name="textfield_label">Material Design</string>
+    <string name="sampleTexy_for_ReceivingFrag_">It is second Fragment</string>
+    <string name="title_activity_temp">TempActivity</string>
+    <string name="title_activity_see_threads">SeeThreads</string>
+    <string name="capture">Stream</string>
+    <string name="imaging">Snap</string>
+    <string name="strButton">STOP</string>
+    <string name="source_text">
+        This is the first feed that is prepared to go live. It is a farily useful Tool to deliver live content
+        while using a simpler setup rather than much complex and costly gadgetry. It is meant to help educational
+        as well as informational aspects of wider audience
+        There are major differences anyhow include, but not necessarily limited to an embedded camera within a portable
+        device (rather than a dedicated and bigger hardware with physical buttons on it)
+    </string>
+    <string name="strStreamButton">Stream</string>
+
+</resources>

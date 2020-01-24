@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="btn_stop_text_size">10sp</dimen>
+    <dimen name="sourceText_Size">18sp</dimen>
+    <dimen name="sourceText_TabSize">28sp</dimen>
+    <dimen name="streamBtnText_Size">8dp</dimen>
+</resources>

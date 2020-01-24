@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/m_videoCam"
+            android:iconTint="@color/color1"
+            android:icon="@drawable/ic_videocam_blue_24dp"
+            android:title="@string/cam" />
+
+        <item
+            android:id="@+id/m_nav_folder"
+            android:iconTint="@color/color3"
+            android:icon="@drawable/ic_folder_24dp"
+            android:title="@string/folder" />
+
+    </group>
+
+</menu>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "83396414611",
+    "firebase_url": "https://teleprompt-e69dd.firebaseio.com",
+    "project_id": "teleprompt-e69dd",
+    "storage_bucket": "teleprompt-e69dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:83396414611:android:304804a9d7575fb8e35166",
+        "android_client_info": {
+          "package_name": "implement.dfw.teleprompt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "83396414611-1md9ns3c68algvm5tupcdl1a28oj230q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "implement.dfw.teleprompt",
+            "certificate_hash": "c92bcab2f9fab3bffe4d52afdb978d4eb6741805"
+          }
+        },
+        {
+          "client_id": "83396414611-qqf6gr83va4tpt20j9ef9drl713hnrq2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkoQyKId0G_gauxSEa6T2JL0ocsCpBAyU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "83396414611-qqf6gr83va4tpt20j9ef9drl713hnrq2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

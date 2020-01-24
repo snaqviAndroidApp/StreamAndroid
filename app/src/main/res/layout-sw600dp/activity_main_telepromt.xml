@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Teleprompter">
+
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="251dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037">
+
+        <TextView
+
+            android:id="@+id/etSource"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="8dp"
+            android:text="@string/source_text"
+            android:textAlignment="center"
+            android:textSize="@dimen/sourceText_TabSize" />
+
+
+    </ScrollView>
+
+    <com.wonderkiln.camerakit.CameraView
+        android:id="@+id/camera"
+
+        android:layout_width="412dp"
+        android:layout_height="151dp"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="60dp"
+        android:adjustViewBounds="true"
+        app:ckCropOutput="true"
+        app:ckFacing="front"
+        app:ckFlash="auto"
+        app:ckJpegQuality="100"
+        app:ckMethod="standard"
+        app:ckPermissions="strict"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.008"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.825">
+
+    </com.wonderkiln.camerakit.CameraView>
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="233dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="24dp"
+        android:layerType="software"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.176"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView3"
+        app:layout_constraintVertical_bias="0.965">
+
+        <Button
+            android:id="@+id/bImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/imaging" />
+
+        <Button
+            android:id="@+id/bCapture"
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/strStreamButton"
+            android:textSize="@dimen/streamBtnText_Size"
+            android:background="@drawable/ic_fiber_manual_record_black_24dp"
+            android:onClick="captureMotion" />
+
+        <Button
+            android:id="@+id/stopRecording"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+
+            android:background="@drawable/ic_stop_black_24dp"
+            android:onClick="stopRecording"
+            android:text="@string/strButton"
+            android:textColor="@color/stop_color"
+            android:textSize="@dimen/btn_stop_text_size" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
