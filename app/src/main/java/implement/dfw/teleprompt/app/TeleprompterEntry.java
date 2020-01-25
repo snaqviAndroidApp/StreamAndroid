@@ -85,6 +85,8 @@ public class TeleprompterEntry extends AppCompatActivity implements
                 break;
             case R.id.mdrop_sensorInteract:
                 break;
+            case R.id.mOptionStream:
+                startActivity(new Intent(getApplicationContext(), Teleprompter.class));
 
             default:
 
@@ -101,8 +103,7 @@ public class TeleprompterEntry extends AppCompatActivity implements
 
     private void CheckUserPermissions() {                 // Permissions
         if (Build.VERSION.SDK_INT >= 23) {
-            if (
-                    (checkSelfPermission(Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) &&
+            if ((checkSelfPermission(Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) &&
                             (checkCallingOrSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) &&
                             (checkCallingOrSelfPermission(Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED)
             )

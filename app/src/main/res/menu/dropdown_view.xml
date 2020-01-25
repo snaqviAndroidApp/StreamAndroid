@@ -2,29 +2,23 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:visible="true"
-        android:title=""
-        android:icon="@drawable/ic_scanner_24dp"
-        app:showAsAction="ifRoom">
-        <menu>
-            <item
-                android:id="@+id/mTextRecog"
-                android:title="Text">
-            </item>
-
-        </menu>
-
-    </item>
-
+<!--    <item-->
+<!--        android:visible="true"-->
+<!--        android:title=""-->
+<!--        android:icon="@drawable/ic_scanner_24dp"-->
+<!--        app:showAsAction="ifRoom">-->
+<!--        <menu>-->
+<!--            <item-->
+<!--                android:id="@+id/mOptionStream"-->
+<!--                android:title="@string/strStreamButton">-->
+<!--            </item>-->
+<!--        </menu>-->
+<!--    </item>-->
 
     <item
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/action_more"
         android:icon="@drawable/ic_arrow_drop_down_circle_icon_24dp"
         android:title=""
-
         app:showAsAction="always">
 
         <menu>
@@ -33,6 +27,14 @@
                 android:icon="@drawable/baseline_pan_tool_black_18dp"
                 android:enabled="false"
                 android:title="@string/ProximitySensor" />
+
+            <item
+                android:id="@+id/mOptionStream"
+                android:visible="true"
+                android:title="@string/cam"
+                android:icon="@drawable/ic_scanner_24dp"
+                app:showAsAction="ifRoom">
+            </item>
 
         </menu>
 
