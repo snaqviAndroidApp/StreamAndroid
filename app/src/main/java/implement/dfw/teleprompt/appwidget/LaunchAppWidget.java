@@ -59,11 +59,12 @@ public class LaunchAppWidget extends AppWidgetProvider {
             rViews.setEmptyView(R.id.tvWidget_ingredient, R.id.empty_view);                          /** set Empty View **/
             rViews.setOnClickPendingIntent(R.id.widget_launch_icon, launch_pIntent);
 
-//            updateAppWidget(context, appWidgetManager, appWidgetId);                    // auto-generated Code, not helping in launching activity
+            updateAppWidget(context, appWidgetManager, appWidgetId);    // auto-generated Code, not helping in launching activity, enabled though
+                                                                        // to see other updates to UI members
             appWidgetManager.updateAppWidget(appWidgetId, rViews);
         }
 
-        super.onUpdate(context, appWidgetManager, appWidgetIds);                          // added to see if app-Launch works, didn't come by default
+        super.onUpdate(context, appWidgetManager, appWidgetIds);                      // added to see if app-Launch works, didn't come by default
     }
 
     @Override
